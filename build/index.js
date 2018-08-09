@@ -37,7 +37,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var DEFAULT_HEIGHT = 100;
-var GLOBAL_NAMESPACE = "__PATTERN_BOOK_CART__";
+var GLOBAL_NAMESPACE = "__REACT_PATTERNS_CART__";
 
 var ReactPatterns = function (_PureComponent) {
   _inherits(ReactPatterns, _PureComponent);
@@ -189,7 +189,6 @@ var ReactPatterns = function (_PureComponent) {
               _this2.addToCart();
             }
           },
-          onClick: this.updateBook,
           className: "react-patterns__example"
         },
         children
@@ -501,9 +500,9 @@ var CSSSniff = function () {
   return CSSSniff;
 }();
 
-var PatternBookCart = function () {
-  function PatternBookCart(args) {
-    _classCallCheck(this, PatternBookCart);
+var PatternsCart = function () {
+  function PatternsCart(args) {
+    _classCallCheck(this, PatternsCart);
 
     this.args = args;
     this.cart = [];
@@ -523,7 +522,7 @@ var PatternBookCart = function () {
     this.initRoot();
   }
 
-  _createClass(PatternBookCart, [{
+  _createClass(PatternsCart, [{
     key: "initRoot",
     value: function initRoot() {
       this.root = document.createElement("div");
@@ -608,12 +607,12 @@ var PatternBookCart = function () {
     }
   }]);
 
-  return PatternBookCart;
+  return PatternsCart;
 }();
 
 if (!window[GLOBAL_NAMESPACE]) {
   // another PB has already registered
-  window[GLOBAL_NAMESPACE] = new PatternBookCart({
+  window[GLOBAL_NAMESPACE] = new PatternsCart({
     namespace: GLOBAL_NAMESPACE
   });
 }

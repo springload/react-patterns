@@ -2,43 +2,63 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="pattern-book"
+  className="react-patterns"
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
 >
-  <div
-    className="pattern-book__example"
+  <button
+    className="b-cart-toggle b-cart-toggle--not-in-cart"
     onClick={[Function]}
+    title="Add to cart"
+  >
+    + Add to cart
+  </button>
+  <div
+    className="react-patterns__example"
   >
     <h1>
       test
     </h1>
   </div>
   <details
-    className="pattern-book__html"
+    className="react-patterns__html"
+    onClick={[Function]}
   >
     <summary>
-      HTML
+      <abbr
+        title="hypertext markup language"
+      >
+        HTML
+      </abbr>
     </summary>
     <code
+      className="b-code"
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<span class=\\"b-tag-start\\">&lt;</span><span class=\\"b-tag\\">h1</span><span class=\\"b-tag-end\\">&gt;</span><br/>
- &nbsp;<span class=\\"b-text\\">test</span><br/>
-<span class=\\"b-tag-start\\">&lt;</span><span class=\\"b-tag-end\\">/</span><span class=\\"b-tag\\">h1</span><span class=\\"b-tag-end\\">&gt;</span><br/>
-",
+          "__html": Array [],
         }
       }
     />
   </details>
   <details
-    className="pattern-book__css"
+    className="react-patterns__css"
+    onClick={[Function]}
   >
     <summary>
-      CSS
+      <abbr
+        title="Cascading Style Sheets"
+      >
+        CSS
+      </abbr>
     </summary>
     <code
+      className="b-code"
       dangerouslySetInnerHTML={
         Object {
-          "__html": "",
+          "__html": Array [],
         }
       }
     />
