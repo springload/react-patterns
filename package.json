@@ -1,6 +1,6 @@
 {
   "name": "react-patterns",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Minimal Pattern Library (style guide) React component for displaying HTML and CSS",
   "main": "./build/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/springload/pattern-book/"
+    "url": "https://github.com/springload/react-patterns/"
   },
   "keywords": [
     "style",
