@@ -1,6 +1,6 @@
 {
   "name": "react-patterns",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Minimal Pattern Library (style guide) React component for displaying HTML and CSS",
   "main": "./build/index.js",
   "scripts": {

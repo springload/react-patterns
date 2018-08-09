@@ -54,7 +54,7 @@ So instead just use <a href="https://github.com/facebookincubator/create-react-a
 
 ## How does react-patterns organise the page of patterns... with headings, accordions, tabs, or what?
 
-Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. react-patterns just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">[react-accessible-accordion</a> though!).
+<p>Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. react-patterns just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">`react-accessible-accordion`</a> though!).</p>
 
 <p>So, long story short, it doesn't organise them, so design it however you want!</p>
 
@@ -78,7 +78,7 @@ Here's a hypothetical... if your pattern library had 5 components then it probab
 
 ## Demo
 
-* [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
+- [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
 
 You? [Tweet me](http://twitter.com/hollowaynz) to be added.
 
