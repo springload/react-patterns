@@ -39,13 +39,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var DEFAULT_HEIGHT = 100;
 var GLOBAL_NAMESPACE = "__PATTERN_BOOK_CART__";
 
-var PatternBook = function (_PureComponent) {
-  _inherits(PatternBook, _PureComponent);
+var ReactPatterns = function (_PureComponent) {
+  _inherits(ReactPatterns, _PureComponent);
 
-  function PatternBook(props) {
-    _classCallCheck(this, PatternBook);
+  function ReactPatterns(props) {
+    _classCallCheck(this, ReactPatterns);
 
-    var _this = _possibleConstructorReturn(this, (PatternBook.__proto__ || Object.getPrototypeOf(PatternBook)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ReactPatterns.__proto__ || Object.getPrototypeOf(ReactPatterns)).call(this, props));
 
     _this.state = {
       visible: true,
@@ -69,7 +69,7 @@ var PatternBook = function (_PureComponent) {
     return _this;
   }
 
-  _createClass(PatternBook, [{
+  _createClass(ReactPatterns, [{
     key: "updateHTML",
     value: function updateHTML() {
       var html = (0, _xmlZeroBeautify2.default)(this.container.innerHTML, {
@@ -190,14 +190,14 @@ var PatternBook = function (_PureComponent) {
             }
           },
           onClick: this.updateBook,
-          className: "pattern-book__example"
+          className: "react-patterns__example"
         },
         children
       );
 
       return _react2.default.createElement(
         "div",
-        { className: "b-container" },
+        { className: "react-patterns", style: { position: "relative" } },
         _react2.default.createElement(
           "button",
           {
@@ -210,7 +210,7 @@ var PatternBook = function (_PureComponent) {
         renderChildren ? renderChildren(kids) : kids,
         _react2.default.createElement(
           "details",
-          { className: "pattern-book__html", onClick: this.updateHTML },
+          { className: "react-patterns__html", onClick: this.updateHTML },
           _react2.default.createElement(
             "summary",
             null,
@@ -227,7 +227,7 @@ var PatternBook = function (_PureComponent) {
         ),
         _react2.default.createElement(
           "details",
-          { className: "pattern-book__css", onClick: this.updateCSS },
+          { className: "react-patterns__css", onClick: this.updateCSS },
           _react2.default.createElement(
             "summary",
             null,
@@ -246,10 +246,10 @@ var PatternBook = function (_PureComponent) {
     }
   }]);
 
-  return PatternBook;
+  return ReactPatterns;
 }(_react.PureComponent);
 
-exports.default = PatternBook;
+exports.default = ReactPatterns;
 
 var CSSSniff = function () {
   function CSSSniff() {

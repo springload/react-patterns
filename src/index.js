@@ -11,7 +11,7 @@ import { saveAs } from "file-saver/FileSaver";
 import JSZip from "jszip";
 
 const DEFAULT_HEIGHT = 100;
-const GLOBAL_NAMESPACE = "__PATTERN_BOOK_CART__";
+const GLOBAL_NAMESPACE = "__REACT_PATTERNS_CART__";
 
 export default class ReactPatterns extends PureComponent {
   constructor(props) {
@@ -149,7 +149,6 @@ export default class ReactPatterns extends PureComponent {
             this.addToCart();
           }
         }}
-        onClick={this.updateBook}
         className="react-patterns__example"
       >
         {children}
@@ -458,7 +457,7 @@ class CSSSniff {
   }
 }
 
-class PatternBookCart {
+class PatternsCart {
   constructor(args) {
     this.args = args;
     this.cart = [];
@@ -558,7 +557,7 @@ class PatternBookCart {
 
 if (!window[GLOBAL_NAMESPACE]) {
   // another PB has already registered
-  window[GLOBAL_NAMESPACE] = new PatternBookCart({
+  window[GLOBAL_NAMESPACE] = new PatternsCart({
     namespace: GLOBAL_NAMESPACE
   });
 }
