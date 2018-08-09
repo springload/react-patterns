@@ -11,19 +11,17 @@
 
 # What is a Pattern Library?
 
-A pattern library (part of a Style Guide or a Design System), is a way of showing example usage of components and how they're made with HTML, CSS, and other assets.
+A pattern library (part of a Style Guide or a Design System), is a way of documenting usage of components and how they're made with HTML, CSS, and other assets.
 
-Having this documented can help siloed teams, or different vendors, coordinate their style to achieve design consistency.
+Having this documented can help siloed teams or different vendors coordinate to achieve design consistency.
 
-## Q. What is React-Patterns?
+## What is React-Patterns?
 
 A component that autodetects the HTML and CSS of your components, and provides a download cart.
 
-## Q. How can I make patterns for an existing website?
+## How can I make a pattern library with React-Patterns?
 
-One of the advantages of react-patterns is that it detects the CSS Rules being applied, so you can put your entire site's CSS files on the page and then write HTML that uses them and react-patterns will only display the relevant CSS (no need to manually associate CSS with a particular `<Book>`). This means that it's hopefully a lot less effort to repurpose your existing CSS as a pattern library.
-
-Unlike most Pattern Libaries there's no need to define components in the way that the framework understands. Instead react-patterns works with your existing components and it auto-detects the code being used.
+One of the advantages of react-patterns is that it detects the CSS Rules being applied, so you can put your production site's CSS files on the page and write HTML that uses them and react-patterns will only display the relevant CSS. This means that a lot less effort to repurpose your existing CSS as a pattern library.
 
 Usage:
 
@@ -78,7 +76,7 @@ Here's a hypothetical... if your pattern library had 5 components then it probab
  <li> [x] Render prop overrides for HTML and CSS
 </ul>
 
-## Who's using it? / Demo
+## Demo
 
 * [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
 

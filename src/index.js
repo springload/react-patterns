@@ -13,7 +13,7 @@ import JSZip from "jszip";
 const DEFAULT_HEIGHT = 100;
 const GLOBAL_NAMESPACE = "__PATTERN_BOOK_CART__";
 
-export default class PatternBook extends PureComponent {
+export default class ReactPatterns extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -150,14 +150,14 @@ export default class PatternBook extends PureComponent {
           }
         }}
         onClick={this.updateBook}
-        className="pattern-book__example"
+        className="react-patterns__example"
       >
         {children}
       </div>
     );
 
     return (
-      <div className="b-container">
+      <div className="react-patterns" style={{ position: "relative" }}>
         <button
           title={inCart ? "Remove from cart" : "Add to cart"}
           onClick={inCart ? this.removeFromCart : this.addToCart}
@@ -168,7 +168,7 @@ export default class PatternBook extends PureComponent {
           {inCart ? "- Remove from cart" : "+ Add to cart"}
         </button>
         {renderChildren ? renderChildren(kids) : kids}
-        <details className="pattern-book__html" onClick={this.updateHTML}>
+        <details className="react-patterns__html" onClick={this.updateHTML}>
           <summary>
             <abbr title="hypertext markup language">HTML</abbr>
           </summary>
@@ -181,7 +181,7 @@ export default class PatternBook extends PureComponent {
             />
           )}
         </details>
-        <details className="pattern-book__css" onClick={this.updateCSS}>
+        <details className="react-patterns__css" onClick={this.updateCSS}>
           <summary>
             <abbr title="Cascading Style Sheets">CSS</abbr>
           </summary>
