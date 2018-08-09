@@ -1,13 +1,13 @@
 <p align="center">
-  <img width="245" height="378" src="/logo.png" alt="Pattern Book"><br>
+  <img width="245" height="378" src="/logo.png" alt="React Patterns"><br>
   <i>A pattern library system designed to be easier to maintain</i>
 </p>
 
 # Install
 
-    npm install react-pattern-book
+    npm install react-patterns
 
-    yarn add react-pattern-book
+    yarn add react-patterns
 
 # What is a Pattern Library?
 
@@ -15,29 +15,29 @@ A pattern library (part of a Style Guide or a Design System), is a way of showin
 
 Having this documented can help siloed teams, or different vendors, coordinate their style to achieve design consistency.
 
-## Q. What is React-Pattern-Book?
+## Q. What is React-Patterns?
 
-A component that autodetects the HTML and CSS of your components.
+A component that autodetects the HTML and CSS of your components, and provides a download cart.
 
 ## Q. How can I make patterns for an existing website?
 
-One of the advantages of Pattern-Book is that it detects the CSS Rules being applied, so you can put your entire site's CSS files on the page and then write HTML that uses them and Pattern-Book will only display the relevant CSS (no need to manually associate CSS with a particular `<Book>`). This means that it's hopefully a lot less effort to repurpose your existing CSS as a pattern library.
+One of the advantages of react-patterns is that it detects the CSS Rules being applied, so you can put your entire site's CSS files on the page and then write HTML that uses them and react-patterns will only display the relevant CSS (no need to manually associate CSS with a particular `<Book>`). This means that it's hopefully a lot less effort to repurpose your existing CSS as a pattern library.
 
-Unlike most Pattern Libaries, also known as Style Guides, there's no need to define components in the way that the framework understands. Instead Pattern-Book works with your existing components and it auto-detects the code being used.
+Unlike most Pattern Libaries there's no need to define components in the way that the framework understands. Instead react-patterns works with your existing components and it auto-detects the code being used.
 
 Usage:
 
 ```javascript
 import React from "react";
-import Book from "react-pattern-book";
+import Pattern from "react-patterns";
 import "h6.css"; // contains h6 { color: red; }
 
 export default () => (
   <main>
     <header>Heading Patterns</header>
-    <Book>
+    <Pattern>
       <h6>My Heading 6</h6>
-    </Book>
+    </Pattern>
   </main>
 );
 ```
@@ -50,19 +50,19 @@ Will look like
 
 Great question.
 
-`react-pattern-book` doesn't include a dev server because other projects do it better.
+`react-patterns` doesn't include a dev server because other projects do it better.
 
-So instead just use <a href="https://github.com/facebookincubator/create-react-app">Create-React-App</a> or, add `<Book>` tags to a new route in your existing app, or use whatever boilerplate you like.
+So instead just use <a href="https://github.com/facebookincubator/create-react-app">Create-React-App</a> or, add `<Pattern>` tags to a new route in your existing app, or use whatever boilerplate you like.
 
-## How does react-pattern-book organise the page of patterns... with headings, accordions, tabs, or what?
+## How does react-patterns organise the page of patterns... with headings, accordions, tabs, or what?
 
-Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. Pattern-Book just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">[react-accessible-accordion</a> though!).
+Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. react-patterns just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">[react-accessible-accordion</a> though!).
 
 <p>So, long story short, it doesn't organise them, so design it however you want!</p>
 
 # Code Preview Themes
 
-<p>Use `react-pattern-book/theme/solarize.css`.</p>
+<p>Use `react-patterns/theme/solarize.css`.</p>
 
 <h3>Features</h3>
 
