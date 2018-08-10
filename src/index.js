@@ -18,7 +18,6 @@ export default class ReactPatterns extends PureComponent {
     super(props);
 
     this.state = {
-      visible: true,
       height: props.height || DEFAULT_HEIGHT,
       html: [],
       css: []
@@ -133,10 +132,14 @@ export default class ReactPatterns extends PureComponent {
   }
 
   render() {
-    const { renderChildren, children, renderHTML, renderCSS } = this.props;
-    const { visible, height, html, jsx, css, inCart } = this.state;
-
-    if (!visible) return <div style={{ height }} />;
+    const {
+      renderChildren,
+      children,
+      renderHTML,
+      renderCSS,
+      hideCart
+    } = this.props;
+    const { height, html, jsx, css, inCart } = this.state;
 
     const kids = (
       <div
@@ -157,15 +160,17 @@ export default class ReactPatterns extends PureComponent {
 
     return (
       <div className="react-patterns" style={{ position: "relative" }}>
-        <button
-          title={inCart ? "Remove from cart" : "Add to cart"}
-          onClick={inCart ? this.removeFromCart : this.addToCart}
-          className={`b-cart-toggle b-cart-toggle--${
-            inCart ? "in-cart" : "not-in-cart"
-          }`}
-        >
-          {inCart ? "- Remove from cart" : "+ Add to cart"}
-        </button>
+        {!hideCart && (
+          <button
+            title={inCart ? "Remove from cart" : "Add to cart"}
+            onClick={inCart ? this.removeFromCart : this.addToCart}
+            className={`b-cart-toggle b-cart-toggle--${
+              inCart ? "in-cart" : "not-in-cart"
+            }`}
+          >
+            {inCart ? "- Remove from cart" : "+ Add to cart"}
+          </button>
+        )}
         {renderChildren ? renderChildren(kids) : kids}
         <details className="react-patterns__html" onClick={this.updateHTML}>
           <summary>
@@ -315,7 +320,8 @@ class CSSSniff {
       }
     };
 
-    let whitelisted, blacklisted;
+    let whitelisted = true;
+    let blacklisted = false;
 
     const whitelistStylesheets =
       options.whitelist && options.whitelist.stylesheet;
@@ -345,7 +351,8 @@ class CSSSniff {
   static mediaIsAllowed(mediaString, options) {
     if (!options || !mediaString) return false;
 
-    let whitelisted, blacklisted;
+    let whitelisted = true;
+    let blacklisted = false;
 
     const whitelistMedia = options.whitelist && options.whitelist.media;
     if (whitelistMedia) {
@@ -373,7 +380,8 @@ class CSSSniff {
   static ruleIsAllowed(ruleString, options) {
     if (!options || !ruleString) return false;
 
-    let whitelisted, blacklisted;
+    let whitelisted = true;
+    let blacklisted = false;
 
     const whitelistRules = options.whitelist && options.whitelist.rule;
     if (whitelistRules) {
