@@ -44,6 +44,14 @@ Will look like
 
 <blockquote><header>Heading Patterns</header><div><h6>My Heading 6</h6><details><summary>HTML</summary>&lt;h6&gt;My Heading 6&lt;/h6&gt;</details><details><summary>CSS</summary>h6 { color: red; }</details></div></blockquote>
 
+### Syntax Highlighting
+
+<p>Use `react-patterns/theme/solarize.css`.</p>
+
+## Demo
+
+* [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
+
 ## This is a pattern library so where's the dev webserver?
 
 Great question.
@@ -58,11 +66,7 @@ So instead just use <a href="https://github.com/facebookincubator/create-react-a
 
 <p>So, long story short, it doesn't organise them, so design it however you want!</p>
 
-# Code Preview Themes
-
-<p>Use `react-patterns/theme/solarize.css`.</p>
-
-<h3>Features</h3>
+## Features
 
 <ul>
  <li> [x] Minimal
@@ -76,13 +80,24 @@ So instead just use <a href="https://github.com/facebookincubator/create-react-a
  <li> [x] Render prop overrides for HTML and CSS
 </ul>
 
-## Demo
+## Props
 
-- [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
+All props are optional. The only requirement is a wrapped node.
 
-You? [Tweet me](http://twitter.com/hollowaynz) to be added.
+<table>
+<tr><th>noCart</th><td>Disable cart</td></tr>
+<tr><th>filename</th><td>Choose the cart ZIP filename for the HTML</td></tr>
+<tr><th>whitelist</th><td>A whitelist of types of CSS to include. An Object or an array of Objects like ```javascript
+{ stylesheet: '', rule: 'substring', media: 'matches' }```</td></tr>
+<tr><th>blacklist</th><td>A blacklist of types of CSS to include. An Object or an array of Objects like ```javascript
+{ stylesheet: '', rule: 'substring', media: 'matches' }```. Use this to exclude your CSS fo</td></tr>
+  <tr><th colspan="2">Render props</th></tr>
+  <tr><th>renderChildren</th><td>A render prop to wrap `children` prop</td></tr>
+  <tr><th>renderHTML</th><td>A render prop to wrap autodetected HTML.</td></tr>
+  <tr><th>renderCSS</th><td>A render prop to wrap autodetected CSS.</td></tr>
+</table>
 
-<h3>ToDo</h3>
+## Roadmap
 
 <ul>
   <li> [ ] ...and show prop types, somehow? (`prop-types` or Flow/TS?). Sadly I'm not sure how we could support FlowType/TypeScript types because those are removed at compile-time.

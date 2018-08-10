@@ -137,7 +137,7 @@ export default class ReactPatterns extends PureComponent {
       children,
       renderHTML,
       renderCSS,
-      hideCart
+      noCart
     } = this.props;
     const { height, html, jsx, css, inCart } = this.state;
 
@@ -160,7 +160,7 @@ export default class ReactPatterns extends PureComponent {
 
     return (
       <div className="react-patterns" style={{ position: "relative" }}>
-        {!hideCart && (
+        {!noCart && (
           <button
             title={inCart ? "Remove from cart" : "Add to cart"}
             onClick={inCart ? this.removeFromCart : this.addToCart}
