@@ -31,26 +31,23 @@ import Pattern from "react-patterns";
 import "h6.css"; // contains h6 { color: red; }
 
 export default () => (
-  <main>
-    <header>Heading Patterns</header>
-    <Pattern>
-      <h6>My Heading 6</h6>
-    </Pattern>
-  </main>
+  <Pattern>
+    <h6>My Heading 6</h6>
+  </Pattern>
 );
 ```
 
-Will look like
+Will render as
 
-<blockquote><header>Heading Patterns</header><div><h6>My Heading 6</h6><details><summary>HTML</summary>&lt;h6&gt;My Heading 6&lt;/h6&gt;</details><details><summary>CSS</summary>h6 { color: red; }</details></div></blockquote>
+<blockquote><h6>My Heading 6</h6><details><summary>HTML</summary>&lt;h6&gt;My Heading 6&lt;/h6&gt;</details><details><summary>CSS</summary>h6 { color: red; }</details></div></blockquote>
 
 ### Syntax Highlighting
 
-<p>Use `react-patterns/theme/solarize.css`.</p>
+Use `react-patterns/theme/solarize.css`.
 
 ## Demo
 
-- [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
+[LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
 
 ## This is a pattern library so where's the dev webserver?
 
@@ -62,9 +59,7 @@ So instead just use <a href="https://github.com/facebookincubator/create-react-a
 
 ## How does react-patterns organise the page of patterns... with headings, accordions, tabs, or what?
 
-<p>Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. react-patterns just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">`react-accessible-accordion`</a> though!).</p>
-
-<p>So, long story short, it doesn't organise them, so design it however you want!</p>
+Here's a hypothetical... if your pattern library had 5 components then it probably should be organised quite differently to another library with 1000 components, so this software is intentionally unopinionated about the presentation of your components. react-patterns just tries to do one thing well -- rendering the component preview. Decide for yourself how to organise them (do try <a href="https://github.com/springload/react-accessible-accordion/">`react-accessible-accordion`</a> though!).
 
 ## Features
 
