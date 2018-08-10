@@ -87,14 +87,12 @@ The only requirement is a wrapped `children` node. All other props are optional.
 <table>
 <tr><th>noCart</th><td>Disable cart</td></tr>
 <tr><th>filename</th><td>Choose the cart ZIP filename for the HTML</td></tr>
-<tr><th>whitelist</th><td>A whitelist of types of CSS to include. An Object or an array of Objects like ```javascript
-{ stylesheet: '', rule: 'substring', media: 'matches' }```</td></tr>
-<tr><th>blacklist</th><td>A blacklist of types of CSS to include. An Object or an array of Objects like ```javascript
-{ stylesheet: '', rule: 'substring', media: 'matches' }```. Use this to exclude your CSS fo</td></tr>
-  <tr><th colspan="2">Render props</th></tr>
-  <tr><th>renderChildren</th><td>A render prop to wrap `children` prop</td></tr>
-  <tr><th>renderHTML</th><td>A render prop to wrap autodetected HTML.</td></tr>
-  <tr><th>renderCSS</th><td>A render prop to wrap autodetected CSS.</td></tr>
+<tr><th>blacklist</th><td>A blacklist of types of CSS to include. An Object or an array of Objects like <code>{ stylesheet: 'substring', rule: 'substring', media: 'substring' }</code>. Use this to exclude certain CSS.</td></tr>
+<tr><th>whitelist</th><td>A whitelist of types of CSS to include. An Object or an array of Objects like <code>{ stylesheet: 'substring', rule: 'substring', media: 'substring' }</code>. Use this to include certain CSS.</td></tr>
+ <tr><th colspan="2">Render props</th></tr>
+ <tr><th>renderChildren</th><td>A render prop to wrap `children` prop</td></tr>
+ <tr><th>renderHTML</th><td>A render prop to wrap autodetected HTML.</td></tr>
+ <tr><th>renderCSS</th><td>A render prop to wrap autodetected CSS.</td></tr>
 </table>
 
 ## Roadmap
