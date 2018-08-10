@@ -50,7 +50,7 @@ Will look like
 
 ## Demo
 
-* [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
+- [LIC Pattern Library](https://springload.github.io/lic-pattern-library/)
 
 ## This is a pattern library so where's the dev webserver?
 
@@ -82,7 +82,7 @@ So instead just use <a href="https://github.com/facebookincubator/create-react-a
 
 ## Props
 
-All props are optional. The only requirement is a wrapped node.
+The only requirement is a wrapped `children` node. All other props are optional.
 
 <table>
 <tr><th>noCart</th><td>Disable cart</td></tr>
